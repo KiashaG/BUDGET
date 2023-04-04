@@ -1,0 +1,47 @@
+﻿<Window x:Class="BudgetAppPROG6221.Vehicle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetAppPROG6221"
+        mc:Ignorable="d"
+        Title="Vehicle" Height="450" Width="800" Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True">
+
+
+    <Border Background="#272537"
+            CornerRadius="20">
+
+        <Grid>
+            <StackPanel HorizontalAlignment="Left" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="469">
+                <TextBlock Name="txtvhl" TextWrapping="Wrap" Text="VEHICLE" Foreground="white" FontSize="20" Height="46"/>
+                <TextBlock Name="txtEnter" TextWrapping="Wrap" Text="Please enter values for the following:" Foreground="white" FontSize="15" Margin="0,0,-53.4,0"/>
+                <TextBlock Name="txtMAM" TextWrapping="Wrap" Text="Make and model" Foreground="white" FontSize="15"/>
+                <TextBox Name="txbMAM" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.2,0"/>
+                <TextBlock Name="txtPr" TextWrapping="Wrap" Text="Price" Foreground="White" FontSize="15"/>
+                <TextBox Name="txbPr" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.2,0"/>
+                <TextBlock Name="txtTD" TextWrapping="Wrap" Text="Total Deposit" Foreground="White" FontSize="15"/>
+                <TextBox Name="txbTD" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.6,0"/>
+                <TextBlock Name="txtIntR" TextWrapping="Wrap" Text="Interest Rate" Foreground="White" FontSize="15"/>
+                <TextBox Name="txbIntR" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.6,0"/>
+                <TextBlock Name="TxtEI" TextWrapping="Wrap" Text="Estimated Insurance" Foreground="White" FontSize="15"/>
+                <TextBox Name="txbEI" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.6,0"/>
+
+
+                <Button  Content="Continue" x:Name="continue" Background="Green" Foreground="White" Height="30" Margin="0,30,364.8,0" Click="continue_Click" />
+                <Button Content="View Savings" x:Name="viewsav" Background="Green" Foreground="White" Margin="0, 10,364.8,0" Height="30" Click="viewsav_Click"/>
+
+
+            </StackPanel>
+            <Border Width="150" Height="150" Background="#ecff4e" CornerRadius="10" Margin="629,13,21,286.6">
+                <Image Margin="10,0,10.4,0.4" Source="/Images/Vehicle.jpg"/>
+            </Border>
+            <Border Width="150" Height="150" Background="HotPink" CornerRadius="10" Margin="479,168,171,131.6" >
+                <Image Margin="10,0,10.4,10.4" Source="/Images/Savings.jpg"/>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
+

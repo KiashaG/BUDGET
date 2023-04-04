@@ -1,0 +1,45 @@
+﻿<Window x:Class="BudgetAppPROG6221.Buy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetAppPROG6221"
+        mc:Ignorable="d"
+        Title="Buy" Height="500" Width="800" Background="Transparent"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        AllowsTransparency="True">
+
+    <Border Background="#272537"
+            CornerRadius="20">
+       
+        <Grid>
+
+            <StackPanel HorizontalAlignment="Left" Height="463" Margin="10,10,0,0" VerticalAlignment="Top" Width="469">
+            <TextBlock x:Name="txtprop" TextWrapping="Wrap" Text="PROPERTY" Foreground="white" FontSize="20" Height="46"/>
+            <TextBlock x:Name="txtEnter" TextWrapping="Wrap" Text="Please enter values for the following:" Foreground="white" FontSize="15" Margin="0,0,-53.4,0"/>
+            <TextBlock x:Name="txtPP" TextWrapping="Wrap" Text="Purchase price of property" Foreground="white" FontSize="15"/>
+            <TextBox x:Name="txbPP" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.2,0"/>
+            <TextBlock x:Name="txtTDep" TextWrapping="Wrap" Text="Total Deposit" Foreground="White" FontSize="15"/>
+            <TextBox x:Name="txbTDep" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.2,0"/>
+            <TextBlock x:Name="txtIR" TextWrapping="Wrap" Text="Interest Rate" Foreground="White" FontSize="15"/>
+            <TextBox x:Name="txbIR" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.6,0"/>
+            <TextBlock x:Name="TxtNumMon" TextWrapping="Wrap" Text="Number of months" Foreground="White" FontSize="15"/>
+            <TextBox x:Name="txbNumMon" Height="28" TextWrapping="Wrap" Text="" Margin="0,0,96.6,0"/>
+
+            <TextBlock x:Name="txtVehicle" TextWrapping="Wrap" Text="Would you like to purchase a vehicle?" Foreground="White" FontSize="15" Margin="0,30,0,0"/>
+            <ComboBox x:Name="ComboBox" Width="200" Height="28" Margin="0,10,270,0">
+                <ComboBoxItem Content="YES" x:Name="yes"/>
+                <ComboBoxItem Content="NO" x:Name="no"/>
+            </ComboBox>
+            <Button  Content="Continue" x:Name="Con" Background="Green" Foreground="White" Height="30" Margin="0,30,348.8,0" Click="Con_Click" />
+            <Button  Content="View Savings" x:Name="viewsavn" Background="Green" Foreground="White" Height="30" Margin="0,10,348.8,0" Click="viewsavn_Click" />
+
+            </StackPanel>
+        <Border Width="150" Height="150" Background="#4eff91" CornerRadius="10" Margin="625,24,25,326">
+            <Image Margin="10,25,10.4,23.4" Source="/Images/Homeloan.jpg"/>
+        </Border>
+        </Grid>
+        
+    </Border>
+</Window>
